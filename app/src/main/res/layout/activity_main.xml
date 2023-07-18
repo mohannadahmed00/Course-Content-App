@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintVertical_weight="3"
+        android:src="@drawable/android"
+        app:layout_constraintBottom_toTopOf="@id/btn_android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="#104ad2"
+        android:onClick="onBtnClick"
+        android:text="Android Course"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_weight="1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/iv_ios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_android" />
+
+    <ImageView
+        android:id="@+id/iv_ios"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintVertical_weight="3"
+        android:src="@drawable/ios"
+        app:layout_constraintBottom_toTopOf="@id/btn_ios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_android" />
+
+    <Button
+        android:id="@+id/btn_ios"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="#104ad2"
+        android:onClick="onBtnClick"
+        android:text="IOS Course"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_weight="1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/iv_web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_ios" />
+
+    <ImageView
+        android:id="@+id/iv_web"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="3"
+        android:scaleType="fitXY"
+        android:src="@drawable/full_stack"
+        app:layout_constraintBottom_toTopOf="@id/btn_web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ios" />
+
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="0dp"
+        app:layout_constraintVertical_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="#104ad2"
+        android:onClick="onBtnClick"
+        android:text="Full Stack Course"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_web" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
